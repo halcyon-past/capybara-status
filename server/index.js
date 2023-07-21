@@ -30,7 +30,7 @@ app.get('/api/capybara', (req, res) => {
     }
 );
 
-app.get('api/[status-code]',(req,res) => {
+app.get('api/\\[status-code\\]',(req,res) => {
     res.status(200).json({url: 'https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg',stat: "Hello There!", msg: "replace [status-code] in the url with http response status codes"});
     }
 );
