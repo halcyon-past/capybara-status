@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+}
+
+.content img{
+  max-width:50%;
+  aspect-ratio: 1/1;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+  color:rgb(124, 123, 120)
+}
+
+@media screen and (max-width: 500px) {
+  .content img{
+    min-width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
