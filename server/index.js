@@ -8,6 +8,7 @@ https://i.chzbgr.com/full/9725064960/h83998A7D/animal-no-jokes-today-only-pain-c
 https://i.chzbgr.com/full/9725061120/h5BDBFE50/person-capy_club -> 202
 https://i.chzbgr.com/full/9725061632/h961AA349/animal-lion-king-0 -> 201
 https://i.chzbgr.com/full/9725067264/hFB5A0E18/37-every-capybara-is-certified-interior-designer-let-one-into-home-if-looking-ideas-spruce-up-place -> 406
+https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg -> welcome 
 
 */
 
@@ -26,6 +27,11 @@ app.get('/', (req, res) => {
 
 app.get('/api/capybara', (req, res) => {
     res.json({url: 'https://i.chzbgr.com/full/9725064704/hFD795457/packaged-goods-sus-capybaratext',stat:'A wild capybara appeared!',msg: "Capybara says 'Hello!'"});
+    }
+);
+
+app.get('api/[status-code]',(req,res) => {
+    res.status(200).json({url: 'https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg',stat: "Hello There!", msg: "replace [status-code] in the url with http response status codes"});
     }
 );
 
