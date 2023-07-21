@@ -9,7 +9,10 @@ https://i.chzbgr.com/full/9725061120/h5BDBFE50/person-capy_club -> 202
 https://i.chzbgr.com/full/9725061632/h961AA349/animal-lion-king-0 -> 201
 https://i.chzbgr.com/full/9725067264/hFB5A0E18/37-every-capybara-is-certified-interior-designer-let-one-into-home-if-looking-ideas-spruce-up-place -> 406
 https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg -> welcome 
-
+https://i.kym-cdn.com/photos/images/newsfeed/002/237/357/628.jpg -> 300
+https://i.kym-cdn.com/photos/images/newsfeed/002/237/358/0a5.jpg -> 500
+https://i.kym-cdn.com/photos/images/newsfeed/002/237/364/4a4.jpg -> 502
+https://i.kym-cdn.com/photos/images/newsfeed/002/237/369/d29.jpg -> 503
 */
 
 const express = require('express');
@@ -82,6 +85,38 @@ app.get('/api/200', (req, res) => {
     res.status(200).json({url: 'https://i.chzbgr.com/full/9725060864/h9A742EFE/person-s-beautiful-looked-at-this-five-hours-now',stat: 200, msg: "Capybara says 'OK 👍🏻'"});
     }
 );
+
+app.get("/api/300", (req, res) => {
+  res.status(200).json({
+    url: "https://i.kym-cdn.com/photos/images/newsfeed/002/237/357/628.jpg",
+    stat: 300,
+    msg: "Capybara says 'Multiple Choices'",
+  });
+});
+
+app.get("/api/500", (req, res) => {
+  res.status(200).json({
+    url: "https://i.kym-cdn.com/photos/images/newsfeed/002/237/358/0a5.jpg",
+    stat: 500,
+    msg: "Capybara says 'Internal Server Error'",
+  });
+});
+
+app.get("/api/502", (req, res) => {
+  res.status(200).json({
+    url: "https://i.kym-cdn.com/photos/images/newsfeed/002/237/364/4a4.jpg",
+    stat: 502,
+    msg: "Capybara says 'Bad Gateway'",
+  });
+});
+
+app.get("/api/503", (req, res) => {
+  res.status(200).json({
+    url: "https://i.kym-cdn.com/photos/images/newsfeed/002/237/369/d29.jpg",
+    stat: 503,
+    msg: "Capybara says 'Service Unavailable'",
+  });
+});
 
 app.listen(port, () => {
     console.log(`Capybara is listening at http://localhost:${port}`);
