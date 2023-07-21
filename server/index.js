@@ -30,14 +30,6 @@ app.get('/api/capybara', (req, res) => {
     }
 );
 
-app.get("/api/*", (req, res) => {
-  res.status(200).json({
-    url: "https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg",
-    stat: "Hello There!",
-    msg: "add http response status codes to the end of the url after .app/ to see the magic",
-  });
-});
-
 app.get("/api/\\[status-code\\]", (req, res) => {
   res.status(200).json({
     url: "https://i.pinimg.com/originals/08/e0/c1/08e0c18e38e81d330ee1ea03bb795f32.jpg",
