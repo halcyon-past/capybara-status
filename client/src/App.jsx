@@ -12,7 +12,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/${urlContent}`);
+      const response = await fetch(`https://capybara-status.onrender.com/api/${urlContent}`);
       const result = await response.json();
       const { url, stat, msg } = result;
       setUrl(url);
