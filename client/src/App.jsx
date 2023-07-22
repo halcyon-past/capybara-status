@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="container">
       <div className="content">
-        <img src={url} alt="capybara" />
+        <img src={url} alt="If you are seeing this come after 2min because the server was inactive and got paused because this is hosted in a free server and now it will take 2min to restart 🥺🥺" />
         <h1>{stat}</h1>
         <h4>{msg}</h4>
       </div>
